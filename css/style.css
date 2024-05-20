@@ -1,9 +1,4 @@
 @import url(reset.css);
-body {
-  font-family: "Faustina", serif;
-  color: var(--color-white);
-  line-height: 1.7;
-}
 
 .container {
   width: var(--container-width-lg);

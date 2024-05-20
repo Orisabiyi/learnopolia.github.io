@@ -16,39 +16,64 @@
   </head>
 
   <body>
-    <h3>Sign Up</h3>
-    <form action="/submit" method="post" class="form">
-      <div class="msg">{{ msg }}</div>
-      <input
-        name="firstname"
-        type="text"
-        placeholder="First name"
-        required
-      /><br />
-      <input
-        name="lastname"
-        type="text"
-        placeholder="Last name"
-        required
-      /><br />
-      <input
-        name="email"
-        type="email"
-        placeholder="Email Address"
-        required
-      /><br />
-      <input
-        name="password"
-        type="password"
-        placeholder="Password"
-        required
-      /><br />
-      <input name="terms_and_conditions" type="checkbox" required />
-      <button type="submit" value="submit">Register</button>
-      <div>
-        <p>Already Have An Account? <a href="/login">Login</a></p>
-      </div>
-    </form>
+    <div class="form">
+      <div class="form__msg">Learnopolia</div>
+      <!-- <div class="msg">{{ msg }}</div> -->
+
+      <form action="/submit" method="post" class="form__container">
+        <h3>Sign Up</h3>
+        <label for="firstname">First Name</label>
+        <input
+          name="firstname"
+          type="text"
+          placeholder="First name"
+          required
+          id="firstname"
+        />
+
+        <label for="lastname">Last Name</label>
+        <input
+          name="lastname"
+          type="text"
+          placeholder="Last name"
+          required
+          id="lastname"
+        />
+
+        <label for="mail">E-mail</label>
+        <input
+          name="email"
+          type="email"
+          placeholder="Email Address"
+          required
+          id="mail"
+        />
+
+        <label for="password">Password</label>
+        <input
+          name="password"
+          type="password"
+          placeholder="Password"
+          required
+          id="password"
+        />
+
+        <div class="form__terms">
+          <input
+            name="terms_and_conditions"
+            type="checkbox"
+            required
+            id="terms"
+          />
+          <label for="terms">Terms and Conditions</label>
+        </div>
+
+        <div class="form__submit">
+          <button type="submit" value="submit">Register</button>
+          <p>Already Have An Account? <a href="/login">Login</a></p>
+        </div>
+      </form>
+    </div>
 
     <!--
         <script>
