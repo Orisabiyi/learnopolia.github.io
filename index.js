@@ -22,17 +22,20 @@ const quesContainer = document.querySelector(".faqs__container");
 
 quesContainer.addEventListener("click", function (e) {
   const targetElement = e.target.closest(".faq");
+  const isActive = targetElement.classList.contains("open");
+  const faqs = e.currentTarget.querySelectorAll(".faq");
 
-  document.querySelectorAll(".faq").forEach((faq) => {
-    faq.classList.remove("open");
-    faq.querySelector(".faq__icon i").classList?.remove("uil-minus");
-    faq.querySelector(".faq__icon i").classList?.add("uil-plus");
-  });
+  // remove open class from any faq
+  faqs.forEach((faq) => faq.classList.remove("open"));
 
+  // add open class to the target faq
   if (targetElement) {
     targetElement.classList.add("open");
     targetElement.querySelector(".faq__icon i").classList.add("uil-minus");
   }
+
+  // toggle the class of the current faq
+  if (targetElement && isActive) targetElement.classList.remove("open");
 });
 
 // Show/hide Navigation Menu Button
