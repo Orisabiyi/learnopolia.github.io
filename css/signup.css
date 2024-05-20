@@ -10,11 +10,23 @@ body {
   color: #000;
 }
 
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 31.25%;
+  }
+}
+
 .form {
   display: flex;
   justify-content: center;
   align-items: stretch;
   min-height: 100vh;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .form {
+    flex-direction: column;
+  }
 }
 
 .form__msg,
@@ -38,6 +50,25 @@ body {
   background-color: var(--color-primary-dark);
   width: 35%;
   order: 1;
+  overflow: hidden;
+}
+
+.form__msg img {
+  display: block;
+  width: 20rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .form__msg {
+    order: -1;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .form__container {
+    padding: 0 15rem;
+  }
 }
 
 .form__terms {
@@ -95,8 +126,13 @@ button {
   font-size: inherit;
   font-weight: bold;
   border-radius: 0.5rem;
+  cursor: pointer;
   color: #fff;
   padding: 2rem;
   width: 100%;
   border: 0;
+}
+
+button:hover {
+  background-color: #7da9dced;
 }
