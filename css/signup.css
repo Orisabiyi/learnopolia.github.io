@@ -76,6 +76,7 @@ body {
     flex: 0 0 auto;
     width: 90%;
     padding: 0;
+    gap: 2rem;
   }
 }
 
@@ -143,4 +144,10 @@ button {
 
 button:hover {
   background-color: #7da9dced;
+}
+
+@media only screen and (max-width: 37.5em) {
+  label {
+    font-size: 2rem;
+  }
 }
