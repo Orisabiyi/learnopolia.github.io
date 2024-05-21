@@ -26,6 +26,9 @@ body {
 @media only screen and (max-width: 37.5em) {
   .form {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem;
   }
 }
 
@@ -62,12 +65,17 @@ body {
 @media only screen and (max-width: 37.5em) {
   .form__msg {
     order: -1;
-    width: 100%;
     background-color: transparent;
   }
 
+  .form__msg img {
+    width: 100%;
+  }
+
   .form__container {
-    padding: 0 15rem;
+    flex: 0 0 auto;
+    width: 90%;
+    padding: 0;
   }
 }
 
