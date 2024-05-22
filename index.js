@@ -20,7 +20,7 @@ const quesContainer = document.querySelector(".faqs__container");
 //   });
 // });
 
-quesContainer.addEventListener("click", function (e) {
+quesContainer?.addEventListener("click", function (e) {
   const targetElement = e.target.closest(".faq");
   const isActive = targetElement.classList.contains("open");
   const faqs = e.currentTarget.querySelectorAll(".faq");
@@ -40,7 +40,7 @@ quesContainer.addEventListener("click", function (e) {
 
 // Show/hide Navigation Menu Button
 const menu = document.querySelector(".nav__menu");
-const openMenuBtn = document.querySelector("#open-menu-btn");
+const openMenuBtn = document.getElementById("open-menu-btn");
 const closeMenuBtn = document.querySelector("#close-menu-btn");
 
 // Adding click listener for the open-menu-btn
@@ -48,6 +48,7 @@ openMenuBtn.addEventListener("click", () => {
   menu.style.display = "flex";
   closeMenuBtn.style.display = "inline-block";
   openMenuBtn.style.display = "none";
+  console.log(true);
 });
 
 // Closing the navigation menu
