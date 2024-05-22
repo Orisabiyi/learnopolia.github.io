@@ -10,7 +10,8 @@
     <link
       rel="icon"
       href="images/website-logo/contact-page/JPG.jpeg"
-      type="image/jpeg" />
+      type="image/jpeg"
+    />
 
     <!-- Link style.css -->
     <link rel="stylesheet" href="css/style.css" />
@@ -21,19 +22,24 @@
     <!-- ICONSCOUT CDN -->
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" />
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
 
     <!-- GOOGLE FONT (Faustina) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Faustina:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <!-- Swiper.js CDN -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script defer src="index.js"></script>
 
     <!-- Linking the email sending functionality -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -93,7 +99,8 @@
             <li>
               <a
                 href="https://www.google.com/search?q=location+of+surulere%2C+lagos%2C+nigeria&rlz=1C1KNTJ_enNG1026NG1026&oq=location+of+surulere%2C+lagos%2C+nigeria&aqs=chrome..69i57.8458j0j7&sourceid=chrome&ie=UTF-8#"
-                target="_blank">
+                target="_blank"
+              >
                 <i class="uil uil-map-marker"></i>
               </a>
               <h5>Surulere, Lagos.</h5>
@@ -112,7 +119,8 @@
             <li>
               <a
                 href="https://instagram.com/dohoudanielfavour/"
-                target="_blank">
+                target="_blank"
+              >
                 <i class="uil uil-instagram"></i>
               </a>
             </li>
@@ -120,7 +128,8 @@
             <li>
               <a
                 href="https://api.whatsapp.com/send?phone=2348139720259"
-                target="_blank">
+                target="_blank"
+              >
                 <i class="uil uil-whatsapp"></i>
               </a>
             </li>
@@ -134,33 +143,40 @@
           method="POST"
           class="contact__form"
         -->
-        <form onsubmit="emailSend(); this.reset(); return false;" class="contact__form">
+        <form
+          onsubmit="emailSend(); this.reset(); return false;"
+          class="contact__form"
+        >
           <div class="form__name">
             <input
               type="text"
               id="firstname"
               name="First Name"
               placeholder="First Name"
-              required />
+              required
+            />
             <input
               type="text"
               id="lastname"
               name="Last Name"
               placeholder="Last Name"
-              required />
+              required
+            />
           </div>
           <input
             type="email"
             id="email"
             name="Email Address"
             placeholder="Your Email Address"
-            required />
+            required
+          />
           <textarea
             name="Message"
             id="message"
             rows="7"
             placeholder="Message..."
-            required></textarea>
+            required
+          ></textarea>
           <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
       </div>
@@ -168,28 +184,39 @@
 
     <!-- Th sending email function -->
     <script>
-    function emailSend() {
-      var firstname = document.getElementById('firstname').value;
-      var lastname = document.getElementById('lastname').value;
-      var email = document.getElementById('email').value;
-      var messageBody = document.getElementById('message').value;
+      function emailSend() {
+        var firstname = document.getElementById("firstname").value;
+        var lastname = document.getElementById("lastname").value;
+        var email = document.getElementById("email").value;
+        var messageBody = document.getElementById("message").value;
 
-      Email.send({
-        Host: 'smtp.elasticemail.com',
-        Username: 'learnopolia-static-github-web@gmail.com',
-        Password: '9FA5D2BA1B44E3006EA0DBC9A71E01B205B3',
-        To: 'learnopolia@gmail.com',
-        From: 'learnopolia@gmail.com',
-        Subject: 'Contact Form Submission from ' + firstname + ' ' + lastname,
-        Body: '<strong>Name:</strong> ' + firstname + ' ' + lastname + '<br><br><strong>Email Address:</strong> ' + email + '<br><br><strong>Message:</strong> ' + messageBody
-        }).then(
-              message => {
-              if (message === 'OK') {
-                swal("Email sent successfully • We'll get back to you shortly.", "", "success");
-              } else {
-                  swal("Mail sending failed 💔 • Try again?", "", "error");
-                }
-              });
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "learnopolia-static-github-web@gmail.com",
+          Password: "9FA5D2BA1B44E3006EA0DBC9A71E01B205B3",
+          To: "learnopolia@gmail.com",
+          From: "learnopolia@gmail.com",
+          Subject: "Contact Form Submission from " + firstname + " " + lastname,
+          Body:
+            "<strong>Name:</strong> " +
+            firstname +
+            " " +
+            lastname +
+            "<br><br><strong>Email Address:</strong> " +
+            email +
+            "<br><br><strong>Message:</strong> " +
+            messageBody,
+        }).then((message) => {
+          if (message === "OK") {
+            swal(
+              "Email sent successfully • We'll get back to you shortly.",
+              "",
+              "success"
+            );
+          } else {
+            swal("Mail sending failed 💔 • Try again?", "", "error");
+          }
+        });
       }
     </script>
 
@@ -245,7 +272,8 @@
               <li>
                 <a
                   href="https://api.whatsapp.com/send?phone=2348139720259"
-                  target="_blank">
+                  target="_blank"
+                >
                   <i class="uil uil-whatsapp"></i>
                 </a>
               </li>
@@ -274,8 +302,9 @@
 
       <!-- Copyright -->
       <div class="footer__copyright">
-        <small>Copyright &copy; 2023. Learnopolia 🐢. All Rights
-          Reserved.</small>
+        <small
+          >Copyright &copy; 2023. Learnopolia 🐢. All Rights Reserved.</small
+        >
       </div>
     </footer>
   </body>
