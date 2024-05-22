@@ -1,13 +1,386 @@
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Dashboard</title>
+
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='images/user-pages/dashboard.jpeg') }}"
+      type="image/jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/dashboard.css') }}"
+    />
+    <link rel="icon" href="images/user-pages/dashboard.jpeg" />
+
+    <link rel="stylesheet" href="css/dashboard.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.1.3/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.3/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="course__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/software.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Software Engineering</h4>
+                <p>
+                  Dive into the world of coding and create innovative software
+                  solutions that shape the digital landscape.
+                </p>
+                <a
+                  href="https://www.alxafrica.com/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <!--course 2-->
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/ai.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Artifical Intelligence</h4>
+                <p>
+                  As AI continues to advance, it holds the promise of solving
+                  complex problems, driving innovation, and improving lives
+                  worldwide. Embracing AI responsibly is key to unlocking its
+                  full potential and building a brighter future for all.
+                </p>
+                <a
+                  href="https://www.alxafrica.com/programme/career-ready-skills-training/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="width: 100%">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/finance.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Personal Finance and Wealth Management</h4>
+                <p>
+                  Take control of your financial future and learn strategies to
+                  grow your wealth, make smart investment decisions, and achieve
+                  financial freedom.
+                </p>
+                <a
+                  href="https://www.udemy.com/topic/personal-finance/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <!--course 4-->
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/graphic.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Graphic Design</h4>
+                <p>
+                  Unleash your creativity and master the art of visual
+                  communication, creating stunning designs that captivate and
+                  inspire.
+                </p>
+                <a
+                  href="https://www.udemy.com/topic/graphic-design/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="width: 100%">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/psychology.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Psychology</h4>
+                <p>
+                  Explore the depths of the human mind, unravel the mysteries of
+                  behavior, and gain insights that can transform lives.
+                </p>
+                <a
+                  href="https://www.edx.org/learn/psychology"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <!--course 6-->
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/creative-writing.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Creative Writing</h4>
+                <p>
+                  Unlock your imagination, harness the power of words, and craft
+                  compelling stories that resonate with readers.
+                </p>
+                <a
+                  href="https://www.edx.org/learn/creative-writing"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="width: 100%">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/photography.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Photography Essentials</h4>
+                <p>
+                  Capture the world through your lens, master the art of
+                  photography, and bring your unique vision to life.
+                </p>
+                <a
+                  href="https://www.coursera.org/courses?query=photography"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <!--course 8-->
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/nutrition.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Nutrition and Healthy Eating Habits</h4>
+                <p>
+                  Discover the science behind nutrition, learn how to nourish
+                  your body, and cultivate lifelong habits for a healthy and
+                  balanced life.
+                </p>
+                <a
+                  href="https://www.edx.org/learn/nutrition"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="width: 100%">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/data-science.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Data Science and Analytics</h4>
+                <p>
+                  Unlock the secrets to financial success, gain control of your
+                  money, and pave the way towards a secure and prosperous
+                  future.
+                </p>
+                <a
+                  href="https://www.alxafrica.com/programme/data-science/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <!--course 10-->
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/digital-marketing.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Marketing Fundamentals</h4>
+                <p>
+                  Learn the essential strategies and tactics to reach and engage
+                  your target audience, drive brand awareness, and achieve
+                  marketing success.
+                </p>
+                <a
+                  href="https://www.edx.org/learn/marketing"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="width: 100%">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/foreign.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Foreign Language Mastery</h4>
+                <p>
+                  Immerse yourself in a new language, unlock a world of cultural
+                  experiences, and connect with people from different parts of
+                  the globe.
+                </p>
+                <a
+                  href="https://www.duolingo.com/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <!--course 12-->
+          <div class="swiper-slide">
+            <article class="course">
+              <div class="course__image">
+                <img src="images/courses/business.jpg" />
+              </div>
+              <div class="course__info">
+                <h4>Business Management</h4>
+                <p>
+                  Gain the skills and knowledge to lead with confidence, drive
+                  organizational success, and make strategic decisions in the
+                  dynamic world of business.
+                </p>
+                <a
+                  href="https://londonsba.org.uk/courses-page/the-credential-of-business-management/?utm_source=google&utm_medium=paid&utm_campaign=20906540320&utm_content=157702133016&utm_term=business%20courses&gadid=686248132028&gad_source=1&gclid=CjwKCAjwupGyBhBBEiwA0UcqaORhoXeWVW8YM8lf19Y28ka9rcxNk_APMWU7G5cMfmUiPnOC78vVnBoCAaMQAvD_BwE"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Learn More</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </div>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          draggable: true,
+        },
+
+        autoplay: {
+          delay: 5000,
+        },
+
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home 🏡</title>
-    <!--
-    <link rel="icon" href="{{ url_for('static', filename='images/user-pages/dashboard.jpeg') }}" type="image/jpg">
-    <link rel="stylesheet" href ="{{ url_for('static', filename='css/dashboard.css') }}">
-    -->
-    <link rel="icon" href="images/user-pages/dashboard.jpeg" >
+   
     <link rel="stylesheet" href="css/dashboard.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
 </head>
-<h2>User's dashboard</h2>
+<h2>User's dashboard</h2> -->
